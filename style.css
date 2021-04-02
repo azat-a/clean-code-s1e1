@@ -177,13 +177,18 @@ body {
   cursor: pointer;
 }
 
-.task__delete-btn img {
-  height: 2em;
+.task__delete-btn-img {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+
+  background-image: url("remove.svg");
+  background-size: contain;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.task__delete-btn img:hover {
+.task__delete-btn-img:hover {
   transform: rotateZ(0);
 }
 
