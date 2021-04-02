@@ -54,6 +54,7 @@ body {
   line-height: 18px;
   height: 21px;
   width: 318px;
+  margin-top: 20px;
   padding: 0 9px;
   border: 1px solid #dDd;
   background: #FFF;
@@ -64,12 +65,6 @@ body {
 
 .todo__new-task-input:focus {
   color: #333;
-}
-
-/* не забыть про маржины */
-label[for="new-task"] { 
-  display: block;
-  margin: 0 0 20px;
 }
 
 .todo__add-btn {
@@ -168,7 +163,8 @@ label[for="new-task"] {
   transform: rotateZ(0);
 }
 
-/* Edit Task */
+/* Edit mode */
+
 .task__input--edit {
   display: inline-block;
   width: 224px;
@@ -178,9 +174,9 @@ label[for="new-task"] {
   display: none;
 }
 
-/* Completed */
+/* Completed task */
 
-ul#completed-tasks label {
+.task__text--completed {
   text-decoration: line-through;
   color: #888;
 }

@@ -40,15 +40,15 @@
         </ul>
       </section>
 
-      <section>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text">
-            <button class="edit">Edit</button>
-            <button class="delete"><img src="./remove.svg"></button>
+      <section class="todo__tasks-section">
+        <h3 class="todo__tasks-heading">Completed</h3>
+        <ul class="todo__tasks-list" id="completed-tasks">
+          <li class="task">
+            <input class="task__checkbox" type="checkbox" checked>
+            <label class="task__text task__text--completed">See the Doctor</label>
+            <input class="task__input" type="text">
+            <button class="task__edit-btn">Edit</button>
+            <button class="task__delete-btn"><img src="./remove.svg"></button>
           </li>
         </ul>
       </section>
