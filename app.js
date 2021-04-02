@@ -65,7 +65,7 @@ let taskCompleted = function() {
 var taskIncomplete = function() {
   let task = this.parentNode;
   incompleteTaskHolder.append(task);
-  bindTaskEvents(listItem, taskCompleted);
+  bindTaskEvents(task, taskCompleted);
 }
 
 

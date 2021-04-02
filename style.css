@@ -23,7 +23,7 @@ body {
 }
 
 .header__more-info {
-  font-family: fantasy, cursive;
+  font-family: Kalam, fantasy, cursive;
 }
 
 @media (max-width: 768px) {
