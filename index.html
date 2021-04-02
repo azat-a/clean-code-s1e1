@@ -13,15 +13,15 @@
     </header>
 
     <main class="todo">
-      <section class="todo__task-section" id="topSectionForAddingElementToList">
+      <section class="todo__task-section">
         <h3 class="todo__tasks-heading">Add Item</h3>
-        <input class="todo__new-task-input" id="new-task" type="text">
-        <button class="todo__add-btn">Add</button>
+        <input class="todo__new-task-input" id="todo__new-task-input" type="text">
+        <button class="todo__add-btn" id="todo__add-btn">Add</button>
       </section>
       
       <section class="todo__tasks-section">
         <h3 class="todo__tasks-heading">Todo</h3>
-        <ul class="todo__tasks-list" id="incompleteTasks">
+        <ul class="todo__tasks-list" id="todo__tasks-list--incompleted">
           <li class="task">
             <input class="task__checkbox" type="checkbox">
             <label class="task__text">Pay Bills</label>
@@ -42,7 +42,7 @@
 
       <section class="todo__tasks-section">
         <h3 class="todo__tasks-heading">Completed</h3>
-        <ul class="todo__tasks-list" id="completed-tasks">
+        <ul class="todo__tasks-list" id="todo__tasks-list--completed">
           <li class="task">
             <input class="task__checkbox" type="checkbox" checked>
             <label class="task__text task__text--completed">See the Doctor</label>
