@@ -21,7 +21,7 @@
       
       <section class="todo__tasks-section">
         <h3 class="todo__tasks-heading">Todo</h3>
-        <ul class="todo__tasks-list" id="todo__tasks-list--incompleted">
+        <ul class="todo__tasks-list" id="task-list-incompleted">
           <li class="task">
             <input class="task__checkbox" type="checkbox">
             <label class="task__text">Pay Bills</label>
@@ -42,7 +42,7 @@
 
       <section class="todo__tasks-section">
         <h3 class="todo__tasks-heading">Completed</h3>
-        <ul class="todo__tasks-list" id="todo__tasks-list--completed">
+        <ul class="todo__tasks-list" id="task-list-completed">
           <li class="task">
             <input class="task__checkbox" type="checkbox" checked>
             <label class="task__text task__text--completed">See the Doctor</label>
@@ -54,6 +54,16 @@
       </section>
     </main>
 
+    <template id="task-template">
+      <li class="task">
+        <input class="task__checkbox" type="checkbox">
+        <label class="task__text">Pay Bills</label>
+        <input class="task__input" type="text">
+        <button class="task__edit-btn">Edit</button>
+        <button class="task__delete-btn"><span class="task__delete-btn-img"></span></button>
+      </li>
+    </template>
+    
     <script src="app.js"></script>
   </body>
 </html>
