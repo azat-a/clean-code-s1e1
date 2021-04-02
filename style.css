@@ -1,9 +1,11 @@
-/* Basic Style */
+/* Basic */
+
 body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 
 /* Header with Eisenhower matrix picture */
 
@@ -30,6 +32,7 @@ body {
 
 }
 
+
 /* Todo block + new task */
 
 .todo {
@@ -50,6 +53,7 @@ body {
 
 .todo__new-task-input {
   margin: 0;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
@@ -84,8 +88,9 @@ body {
 
 .todo__tasks-list {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
+
 
 /* Task */
 
@@ -163,7 +168,8 @@ body {
   transform: rotateZ(0);
 }
 
-/* Edit mode */
+
+/* Editing and completed tasks */
 
 .task__input--edit {
   display: inline-block;
@@ -173,8 +179,6 @@ body {
 .task__text--edit {
   display: none;
 }
-
-/* Completed task */
 
 .task__text--completed {
   text-decoration: line-through;
