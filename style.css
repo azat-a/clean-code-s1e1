@@ -94,7 +94,7 @@ body {
 }
 
 .todo__add-btn:hover {
-  color: #0FC57C;
+  color: #0fc57c;
 }
 
 .todo__tasks-list {
@@ -139,8 +139,8 @@ body {
   line-height: 18px;
   color: #888;
 
-  background: #FFF;
-  border: 1px solid #dDd;
+  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 6px;
   outline: none;
 }
@@ -164,7 +164,7 @@ body {
 }
 
 .task__edit-btn:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 .task__delete-btn {
