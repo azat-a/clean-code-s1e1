@@ -58,6 +58,10 @@ let deleteTask = function() {
 let taskCompleted = function() {
   let task = this.parentNode;
   completedTasksHolder.append(task);
+
+  task.querySelector(".task__text")
+      .classList.toggle("task__text--completed");
+  
   bindTaskEvents(task, taskIncomplete);
 }
 
@@ -65,11 +69,13 @@ let taskCompleted = function() {
 var taskIncomplete = function() {
   let task = this.parentNode;
   incompleteTaskHolder.append(task);
+  
+  task.querySelector(".task__text")
+      .classList.toggle("task__text--completed");
+  
   bindTaskEvents(task, taskCompleted);
 }
 
-
-addButton.onclick = addTask;
 addButton.addEventListener("click", addTask);
 
 let bindTaskEvents = function(task, checkBoxEventHandler) {
